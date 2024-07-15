@@ -1,0 +1,273 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    margin : 0 100px;
+    background-color: #ffeae0;
+    
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+
+.nav .logo h1 {
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    color: #25183d;
+}
+
+.nav .logo b {
+    color:  #50495e;
+}
+
+
+.nav ul{
+    display: flex;
+    list-style:none;
+}
+
+.nav ul li{
+    margin-right: 30px;
+}
+
+.nav ul li a{
+    text-decoration:none;
+    color: #50495e;
+    font-weight: 500;
+    font-family: 'Georgia', serif;
+    font-size: 17px;
+}
+
+.nav ul .active::after{
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color: #50495e;
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+
+input{
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.signin{
+    background: transparent;
+    border: none;
+}
+
+.signup{
+    background-color: #50495e;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.content{
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 30px;
+    margin-top: 120px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content .content-left{
+    display: block;
+    width: 100%;
+}
+
+.content .content-left .info{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .content-left .info h2{
+    font-size: 25px;
+    font-family: "Georgia", "Times New Roman", Times, serif;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.content .content-left .info p{
+    font-size: 15px;
+    line-height: 1pc;
+    margin-bottom: 30px;
+    font-family: 'Cinzel', serif;
+            font-style: italic;
+}
+
+.content .content-left button{
+    padding: 10px 22px;
+    background-color: #50495e;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    align-items: center; /* Vertically center content */
+}
+
+.content .content-right {
+    flex: 1; /* Take remaining space */
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.content .content-right img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure image behaves as a block element */
+    user-select: none;
+}
+
+.category{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.category .list-items{
+    width: 90%;
+    position: relative;
+    margin-top: 100px;
+}
+
+.category .list-items h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'MyCustomFont', serif;
+    font-style: italic;
+    margin-bottom: 70px;
+}
+
+.category .list-items .card-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.category .card-list .card {
+    width: 200px;
+    height: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    background: #e2c4b6;
+    outline: 2px solid #50495e;
+}
+
+.category .card-list .card img {
+    width: 95%; /* Fit the container's width */
+    height: 50%; /* Maintain aspect ratio */
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 10px;
+    padding: 4px;
+    bottom: 140px;
+    left: 0; /* Centered horizontally */
+}
+
+.category .card-list .card .food-title h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'MyCustomFont', serif;
+    font-style: italic;
+}
+
+.category .card .desc-food p{
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-style: italic;
+}
+
+.category .card .price span{
+    font-weight: 600;
+    font-family: 'Roboto Slab', serif;
+    font-style: italic;
+}
+
+
+.service-item {
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.service-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+
+.about-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+.gallery-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
